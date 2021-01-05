@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\PersonalInfoController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,3 +15,5 @@ use App\Http\Controllers\PersonController;
 |
 */
 Route::apiResource('person', PersonController::class);
+Route::apiResource('personalInfo', PersonalInfoController::class);
+Route::apiResource('sector',\App\Http\Controllers\SectorsController ::class);
