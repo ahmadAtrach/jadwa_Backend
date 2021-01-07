@@ -13,7 +13,7 @@ class SectorsController extends Controller
         return new SectorResource($sector);
     }
     public function index():SectorResourceCollection {
-        return new SectorResourceCollection(Sector::paginate());
+        return new SectorResourceCollection(Sector::all());
     }
     public function store(Request  $request){
         $request->validate([

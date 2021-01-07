@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="03a717b7-a42d-4a87-8317-98219839b6a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonalInfoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonalInfoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SectorsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SectorsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AboutTheBusiness.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AboutTheBusiness.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055026_create_incomes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055026_create_incomes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055045_create_about_the_businesses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055045_create_about_the_businesses_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +180,7 @@
       <workItem from="1609218498753" duration="6577000" />
       <workItem from="1609602801111" duration="67000" />
       <workItem from="1609851351434" duration="4523000" />
-      <workItem from="1609857016979" duration="2496000" />
+      <workItem from="1609857016979" duration="38270000" />
     </task>
     <servers />
   </component>

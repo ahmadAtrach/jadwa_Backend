@@ -14,7 +14,21 @@ class CreateAboutTheBusinessesTable extends Migration
     public function up()
     {
         Schema::create('about_the_businesses', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('business')->nullable();
+            $table->string('brand_name')->nullable();
+            $table->date('establishment_date')->nullable();
+            $table->integer('number_beehives')->nullable();
+            $table->string('clients')->nullable();
+            $table->string('annual_revenue')->nullable();
+            $table->date('employment_date')->nullable();
+            $table->boolean('is_side_business')->nullable();
+            $table->string('business_info')->nullable();
+            $table->string('business_location')->nullable();
+            $table->string('business_duration')->nullable();
+            $table->string('business_average_salary')->nullable();
+            $table->bigInteger('fulltimers_id')->nullable();
+            $table->bigInteger('equipments_id')->nullable();
             $table->timestamps();
         });
     }

@@ -16,4 +16,6 @@ use App\Http\Controllers\PersonalInfoController;
 */
 Route::apiResource('person', PersonController::class);
 Route::apiResource('personalInfo', PersonalInfoController::class);
-Route::apiResource('sector',\App\Http\Controllers\SectorsController ::class);
+Route::apiResource('sectors',\App\Http\Controllers\SectorsController ::class);
+Route::apiResource('aboutTheBusiness',\App\Http\Controllers\AboutTheBusinessController ::class);
+Route::apiResource('aboutTheBusiness/fulltimers',\App\Http\Controllers\FulltimerController ::class);

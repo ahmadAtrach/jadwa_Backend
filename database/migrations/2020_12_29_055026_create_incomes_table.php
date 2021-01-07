@@ -15,6 +15,18 @@ class CreateIncomesTable extends Migration
     {
         Schema::create('incomes', function (Blueprint $table) {
             $table->id();
+            $table->boolean('is_income');
+            $table->string('income');
+            $table->boolean('is_employed');
+            $table->string('employing_place');
+            $table->string('employment_job');
+            $table->date('employment_date');
+            $table->string('employment_salary');
+            $table->boolean('is_side_business');
+            $table->string('business_info');
+            $table->string('business_location');
+            $table->string('business_date');
+            $table->string('business_average_salary');
             $table->timestamps();
         });
     }

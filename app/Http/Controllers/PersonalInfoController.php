@@ -10,11 +10,12 @@ use Illuminate\Http\Request;
 
 class PersonalInfoController extends Controller
 {
-    public function show(PersonalInfo $personalInfo):PersonalInfoResource{
-        return new PersonalInfoResource($personalInfo);
-    }
+
     public function index():PersonalInfoResourceCollection {
-        return new PersonalInfoResourceCollection(PersonalInfo::paginate());
+        return new PersonalInfoResourceCollection(PersonalInfo::all());
+    }
+    public function show(PersonalInfo $personalInfo):PersonalInfoResource{
+        return new PersonalInfoResource($personalInfo)  ;
     }
     public function store(Request  $request){
         $request->validate([
@@ -37,6 +38,6 @@ class PersonalInfoController extends Controller
     }
     public function destroy(PersonalInfo $personalInfo){
         $personalInfo -> delete();
-        return response()->json('user is deleted successfully');
+        return response()->json('PersonalInfo is deleted successfully');
     }
 }

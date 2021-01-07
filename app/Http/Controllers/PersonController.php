@@ -13,7 +13,7 @@ class PersonController extends Controller
         return new PersonResource($person);
     }
     public function index():PersonResourceCollection {
-        return new PersonResourceCollection(Person::paginate());
+        return new PersonResourceCollection(Person::all());
     }
     public function store(Request  $request){
         $request->validate([
