@@ -15,7 +15,7 @@ class MarketAnalysisController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index():MarketAnalysisResourceCollection
+    public function index(): MarketAnalysisResourceCollection
     {
         return new MarketAnalysisResourceCollection(MarketAnalysis::all());
     }
@@ -23,13 +23,13 @@ class MarketAnalysisController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         $marketAnalysis = MarketAnalysis::create($request->all());
-        foreach ($request->competitors as $list){
+        foreach ($request->competitors as $list) {
             $list['market_analyses_id'] = $marketAnalysis->id;
             Competitors::create($list);
         }
@@ -39,21 +39,23 @@ class MarketAnalysisController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\MarketAnalysis  $marketAnalysis
+     * @param \App\Models\MarketAnalysis $marketAnalysis
      * @return \Illuminate\Http\Response
      */
 
-    public function show(MarketAnalysis $marketAnalysis):MarketAnalysisResource{
-        return new MarketAnalysisResource($marketAnalysis);
+    public function show(MarketAnalysis $marketAnalysi): MarketAnalysisResource
+    {
+        return new MarketAnalysisResource($marketAnalysi);
     }
+
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\MarketAnalysis  $marketAnalysis
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\MarketAnalysis $marketAnalysis
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, MarketAnalysis $marketAnalysis)
+    public function update(Request $request, MarketAnalysis $marketAnalysi)
     {
         $marketAnalysis->update($request->all());
         return new MarketAnalysisResource($marketAnalysis);
@@ -62,12 +64,13 @@ class MarketAnalysisController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\MarketAnalysis  $marketAnalysis
+     * @param \App\Models\MarketAnalysis $marketAnalysis
      * @return \Illuminate\Http\Response
      */
-    public function destroy(MarketAnalysis $marketAnalysis)
+    public function destroy(MarketAnalysis $marketAnalysi)
     {
-        $marketAnalysis->delete();
+        $marketAnalysi->delete();
         return response()->json("MarketAnalysis deleted successfully");
     }
 }
+

@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03a717b7-a42d-4a87-8317-98219839b6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/SalesForecast.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AboutTheBusinessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AboutTheBusinessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FulltimerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FulltimerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/AboutTheBusinessDir/AboutTheBusinessResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/AboutTheBusinessDir/AboutTheBusinessResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/PersonResource.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/PersonResourceCollection.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AboutTheBusiness.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AboutTheBusiness.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AboutThePremises.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Fulltimer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Fulltimer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Income.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MarketAnalysisController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Competitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Competitors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/MarketAnalysis.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/NewProject.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Person.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Productivity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Productivity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/SalesForcast.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SalesForcastFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SalesForcastFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055045_create_about_the_businesses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055045_create_about_the_businesses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055349_create_about_the_premises_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055349_create_about_the_premises_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055404_create_new_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055404_create_new_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055418_create_productivities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055418_create_productivities_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055433_create_sales_forcasts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055433_create_sales_forcasts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_055447_create_market_analyses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_055447_create_market_analyses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_07_133308_create_fulltimers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_07_133308_create_fulltimers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +177,7 @@
       <workItem from="1609602801111" duration="67000" />
       <workItem from="1609851351434" duration="4523000" />
       <workItem from="1609857016979" duration="38270000" />
-      <workItem from="1610462299496" duration="17205000" />
+      <workItem from="1610462299496" duration="18078000" />
     </task>
     <servers />
   </component>
