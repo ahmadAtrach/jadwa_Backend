@@ -27,8 +27,6 @@ class CreateAboutTheBusinessesTable extends Migration
             $table->string('business_location')->nullable();
             $table->string('business_duration')->nullable();
             $table->string('business_average_salary')->nullable();
-            $table->bigInteger('fulltimers_id')->nullable();
-            $table->bigInteger('equipments_id')->nullable();
             $table->timestamps();
         });
     }

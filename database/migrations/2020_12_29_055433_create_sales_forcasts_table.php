@@ -13,8 +13,9 @@ class CreateSalesForcastsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sales_forcasts', function (Blueprint $table) {
+        Schema::create('sales_forecasts', function (Blueprint $table) {
             $table->id();
+            $table->boolean('is_products');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ class CreateSalesForcastsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sales_forcasts');
+        Schema::dropIfExists('sales_forecasts');
     }
 }

@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\SalesForcast;
+use App\Models\SalesForecast;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class SalesForcastFactory extends Factory
+class SalesForecastFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = SalesForcast::class;
+    protected $model = SalesForecast::class;
 
     /**
      * Define the model's default state.

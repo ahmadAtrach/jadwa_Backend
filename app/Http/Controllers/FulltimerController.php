@@ -48,7 +48,7 @@ class FulltimerController extends Controller
     public function update(Request $request, Fulltimer $fulltimer):FulltimersResource
     {
         $fulltimer -> update($request->all());
-        return new PersonalInfoResource($fulltimer);
+        return new FulltimersResource($fulltimer);
     }
 
     /**
@@ -60,6 +60,6 @@ class FulltimerController extends Controller
     public function destroy(Fulltimer $fulltimer)
     {
         $fulltimer -> delete();
-        return response()->json('PersonalInfo is deleted successfully');
+        return response()->json('Fulltimer is deleted successfully');
     }
 }

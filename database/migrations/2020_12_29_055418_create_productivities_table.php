@@ -15,6 +15,10 @@ class CreateProductivitiesTable extends Migration
     {
         Schema::create('productivities', function (Blueprint $table) {
             $table->id();
+            $table->integer('number_of_beehives');
+            $table->string('p_unit');
+            $table->boolean('is_sales_seasonal');
+            $table->string('other_items');
             $table->timestamps();
         });
     }

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Resources;
+namespace App\Http\Resources\ProductivityDir;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class PersonResource extends JsonResource
+class SeasonResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,9 +15,5 @@ class PersonResource extends JsonResource
     public function toArray($request)
     {
         return parent::toArray($request);
-        // return [
-        //     'first_name' => $this->first_name,
-        //     'last_name' => $this->lasr_name,
-        // ];
     }
 }

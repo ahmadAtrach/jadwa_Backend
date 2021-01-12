@@ -16,6 +16,8 @@ class CreateFulltimersTable extends Migration
         Schema::create('fulltimers', function (Blueprint $table) {
             $table->id();
             $table->string("position");
+            $table->double("salary");
+            $table->integer("stuff");
             $table->unsignedBigInteger('about_the_businesses_id');
             $table->foreign('about_the_businesses_id')->references('id')->on('about_the_businesses')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();

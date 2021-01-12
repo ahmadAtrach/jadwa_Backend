@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Resources\AboutTheBusinessDir\AboutTheBusinessResource;
 use App\Http\Resources\AboutTheBusinessDir\AboutTheBusinessResourceCollection;
 use App\Models\AboutTheBusiness;
-use App\Models\Fulltimers;
+use App\Models\Fulltimer;
+use App\Models\ListofEquipment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 class AboutTheBusinessController extends Controller
@@ -18,18 +19,16 @@ class AboutTheBusinessController extends Controller
     }
     public function store(Request $request)
     {
-//        $request->validate([
-//            'name' => 'required',
-//            'birthday' => 'required',
-//            'gender' => 'required',
-//            'martial_status' => 'required',
-//            'level_of_education' => 'required',
-//            'major' => 'required',
-//            'university' => 'required',
-//            'industry' => 'required',
-//            'years_of_experience' => 'required',
-//        ]);
+        //to validate
         $aboutTheBusiness = AboutTheBusiness::create($request->all());
+        foreach ($request->listOfEquipments as $list){
+            $list['about_the_businesses_id'] = $aboutTheBusiness->id;
+            ListofEquipment::create($list);
+        }
+        foreach ($request->fulltimers as $list){
+            $list['about_the_businesses_id'] = $aboutTheBusiness->id;
+            Fulltimer::create($list);
+        }
         return new AboutTheBusinessResource($aboutTheBusiness);
     }
     public function update(AboutTheBusiness $aboutTheBusiness, Request $request):AboutTheBusinessResource{

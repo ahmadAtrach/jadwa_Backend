@@ -15,6 +15,13 @@ class CreateNewProjectsTable extends Migration
     {
         Schema::create('new_projects', function (Blueprint $table) {
             $table->id();
+            $table->string("inv");
+            $table->string("nature_of_project");
+            $table->string("inv_term");
+            $table->string("grace_period");
+            $table->string("project_contributing");
+            $table->string("contributing_amount");
+            $table->string("contributing_covering");
             $table->timestamps();
         });
     }

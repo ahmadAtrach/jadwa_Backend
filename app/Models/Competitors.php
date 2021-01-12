@@ -5,17 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class MarketAnalysis extends Model
+class Competitors extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'name',
         'advantage',
         'weaknesses',
         'quality',
         'price',
+        'market_analyses_id'
     ];
-    public function competitors()
+    public function marketAnalysis()
     {
-        return $this->hasMany(Competitors::class ,'market_analyses_id');
+        return $this->belongsTo(MarketAnalysis::class);
     }
 }
