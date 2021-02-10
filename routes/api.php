@@ -24,5 +24,6 @@ Route::apiResource('seasons',\App\Http\Controllers\SeasonsController ::class);
 Route::apiResource('salesForecasts',\App\Http\Controllers\SalesForecastController ::class);
 Route::apiResource('newProjects',\App\Http\Controllers\NewProjectController ::class);
 Route::apiResource('marketAnalysis',\App\Http\Controllers\MarketAnalysisController ::class);
+Route::apiResource('BusinessPlan',\App\Http\Controllers\BusinessPlanController ::class);
 
 

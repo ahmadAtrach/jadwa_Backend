@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03a717b7-a42d-4a87-8317-98219839b6a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/BusinessPlanController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/BusinessPlanDir/BusinessPlanResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/BusinessPlanDir/BusinessPlanResourceCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/BusinessPlan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_183253_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_185208_create_business_plans_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jadwa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jadwa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MarketAnalysisController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Competitors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Competitors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MarketAnalysis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Sector.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -134,19 +152,23 @@
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mGzdcGKThTM4MefMj7fqPm7yQb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dev/testsite04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blackbox/blackbox" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="copyright" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -178,6 +200,12 @@
       <workItem from="1609851351434" duration="4523000" />
       <workItem from="1609857016979" duration="38270000" />
       <workItem from="1610462299496" duration="18078000" />
+      <workItem from="1610725335037" duration="23000" />
+      <workItem from="1611327230825" duration="47000" />
+      <workItem from="1611327338429" duration="8213000" />
+      <workItem from="1611598076869" duration="681000" />
+      <workItem from="1611931013195" duration="4127000" />
+      <workItem from="1612134350957" duration="23000" />
     </task>
     <servers />
   </component>
@@ -196,6 +224,9 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -208,6 +239,11 @@
           <url>file://$PROJECT_DIR$/database/migrations/2021_01_07_231550_create_seasons_table.php</url>
           <line>15</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/AboutTheBusinessController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
